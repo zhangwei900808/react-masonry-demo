@@ -35,7 +35,7 @@ export default class ImageGridList extends React.Component {
                                 imgsData.map(img=>{
                                     return (
                                         <div key={img.id} className="cell" onMouseMove={this.onImageMouseMove}>
-                                            <Link className={'link'} to={`/image/${img.id}`}>
+                                            <Link className={'link'} to={`/image/${img.extend+img.id}`}>
                                                 <div  className="image-wrapper">
                                                     <img src={img.src} />
                                                 </div>

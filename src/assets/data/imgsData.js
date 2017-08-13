@@ -5,6 +5,7 @@ for(let i=1;i<101;i++){
       id:i,
       src: require(`../imgs/hg${i}.jpeg`),
       title: '美美',
+      extend:'hg'
     })
 }
   export default imgsData

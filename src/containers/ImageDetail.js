@@ -38,6 +38,9 @@ class ImageDetail extends React.Component{
             this.props.history.push('/');
         }
     }
+    onGithub=()=>{
+        window.location.href="https://github.com/zhangwei900808/react-masonry-demo";
+    }
     render(){
         return (
             <div className={this.props.classes.root}>
@@ -47,9 +50,9 @@ class ImageDetail extends React.Component{
                                 <ArrowBackIcon />
                             </IconButton>
                             <Typography type="title" color="inherit" className={this.props.classes.flex}>
-                                美美，我爱你
+                                React-Masonry-Demo
                             </Typography>
-                            <Button color="contrast">登录</Button>
+                            <Button color="contrast" onClick={this.onGithub}>GitHub</Button>
                         </Toolbar>
                 </AppBar>
                 <div ref={ref => (this.rootRef = ref)} className={this.props.classes.container}>
@@ -58,8 +61,8 @@ class ImageDetail extends React.Component{
                             <div className={'image-outer'}>
                                 <div className={'image'}>
                                     <Img
-                                        src={require(`../assets/imgs/mm${this.props.match.params.id}.jpeg`)}
-                                                                               />
+                                        src={require(`../assets/imgs/${this.props.match.params.id}.jpeg`)}
+                                    />
                                 </div>
                             </div>
                         </Grid>
