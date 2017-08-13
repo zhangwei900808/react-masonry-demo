@@ -1,9 +1,9 @@
 let imgsData = []
 
-for(let i=1;i<108;i++){
+for(let i=1;i<101;i++){
     imgsData.push({
       id:i,
-      src: require(`../imgs/mm${i}.jpeg`),
+      src: require(`../imgs/hg${i}.jpeg`),
       title: '美美',
     })
 }

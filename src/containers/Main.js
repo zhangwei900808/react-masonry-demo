@@ -66,6 +66,9 @@ class Main extends React.Component {
     onOpenPlayer=()=>{
         this.props.history.push('/player');
     }
+    onGithub=()=>{
+        window.location.href="https://github.com/zhangwei900808/react-masonry-demo";
+    }
     render(){
         
         return (
@@ -76,9 +79,9 @@ class Main extends React.Component {
                                 <MenuIcon />
                             </IconButton>
                             <Typography type="title" color="inherit" className={this.props.classes.flex}>
-                                美美，我爱你
+                                React-Masonry-Demo
                             </Typography>
-                            <Button color="contrast">登录</Button>
+                            <Button color="contrast" onClick={this.onGithub}>GitHub</Button>
                         </Toolbar>
                 </AppBar>
                 <div ref={ref => (this.rootRef = ref)} className={this.props.classes.container}>
